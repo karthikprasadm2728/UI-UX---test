@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Of Moment's</title>
+    <link rel="preload" href="https://wallpaperaccess.com/full/6451647.png" as="image">
+    <link rel="preconnect" href="https://wallpaperaccess.com">
+    <link rel="stylesheet" href="galaxy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="stars"></div>
+    <nav class="navbar">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/kkarthhikk" target="_blank">
+                <img src="https://img.icons8.com/?size=48&id=DpOQ6G5p47f0&format=png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=447&format=png" alt="LinkedIn">
+            </a>
+            <a href="https://pin.it/70AOzYsfW" target="_blank">
+                <img src="https://img.icons8.com/?size=48&id=CeRsUJCNL4go&format=png" alt="Pinterest">
+            </a>
+            <a href="https://open.spotify.com/user/31g54rthdkjwc7tk2yzwlkptbbqi" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=6707&format=png" alt="Spotify">
+            </a>
+        </div>
+
+        <h2 class="logo"></h2>
+
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="#">Know me <3</menu></a>
+                <a href="upload.html">Image Upload</a>
+            </div>
+        </div>
+
+        <button id="slideshowToggle" class="moon-button">🌙</button>
+    </nav>
+
+    <div class="container">
+        <div class="main-image">
+            <img id="displayedImage" src="https://wallpaperaccess.com/full/6451647.png" alt="Main image">
+        </div>
+
+        <div class="thumbnails">
+            <img class="thumb active" src="placeholder.jpg" data-src="https://wallpaperaccess.com/full/640842.jpg" alt="Pic 1" onclick="changeImage(this, 'https://wallpaperaccess.com/full/640842.jpg')">
+            <img class="thumb" src="placeholder.jpg" data-src="https://wallpaperaccess.com/full/6451439.jpg" alt="Pic 2" onclick="changeImage(this, 'https://wallpaperaccess.com/full/6451439.jpg')">
+            <img class="thumb" src="placeholder.jpg" data-src="https://wallpaperaccess.com/full/6451552.jpg" alt="Pic 3" onclick="changeImage(this, 'https://wallpaperaccess.com/full/6451552.jpg')">
+            <img class="thumb" src="placeholder.jpg" data-src="https://wallpaperaccess.com/full/1588.jpg" alt="Pic 4" onclick="changeImage(this, 'https://wallpaperaccess.com/full/1588.jpg')">
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-container"> 
+            <video id="displayedVideo" controls>
+                <source src="https://media-hosting.imagekit.io//8f9a73c56b0e4215/Chainsaw%20Man%20Girs%20(1).mp4?Expires=1835534411&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=LVUujhdxqkMfLcQbWkMY7YPKZVdq-TkSzF43mmVrvSlaq5fAJBtZDS3jX0I55TW7T12B1fDYar7-Auyz2NNgUNLWuCoqokJIyWZVm6qGaeDvJQDNYedMKDfyCSV5lpc1bWblpHByULQbefLEhyP1zILVEb7j9y0TYWqc91lE0pM20yVsiDy4FoNYhTjia~e~YRqwxlU8I1-io-HSqHk3kudPGjPDd3YKNoyVWZqLGXJMMnCjR6Yy-18-kBEkhR115nbntlFtb5WGOZ3N~Eqs74E4KIdLWjukzPym5ag0xTFjROled0WOO6CL5zSc7Et3x~kfLbX4RNL-iN7Xs6PZ5w" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-thumbnails">
+            <img class="video-thumb active" src="https://th.bing.com/th/id/OIP.c8k1qda_KSw5dOwdmHTa1wHaEG?w=317&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" data-src="https://media-hosting.imagekit.io//8f9a73c56b0e4215/Chainsaw%20Man%20Girs%20(1).mp4?Expires=1835534411&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=LVUujhdxqkMfLcQbWkMY7YPKZVdq-TkSzF43mmVrvSlaq5fAJBtZDS3jX0I55TW7T12B1fDYar7-Auyz2NNgUNLWuCoqokJIyWZVm6qGaeDvJQDNYedMKDfyCSV5lpc1bWblpHByULQbefLEhyP1zILVEb7j9y0TYWqc91lE0pM20yVsiDy4FoNYhTjia~e~YRqwxlU8I1-io-HSqHk3kudPGjPDd3YKNoyVWZqLGXJMMnCjR6Yy-18-kBEkhR115nbntlFtb5WGOZ3N~Eqs74E4KIdLWjukzPym5ag0xTFjROled0WOO6CL5zSc7Et3x~kfLbX4RNL-iN7Xs6PZ5w__" alt="Video 1" onclick="changeVideo(this, 'https://media-hosting.imagekit.io//8f9a73c56b0e4215/Chainsaw%20Man%20Girs%20(1).mp4?Expires=1835534411&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=LVUujhdxqkMfLcQbWkMY7YPKZVdq-TkSzF43mmVrvSlaq5fAJBtZDS3jX0I55TW7T12B1fDYar7-Auyz2NNgUNLWuCoqokJIyWZVm6qGaeDvJQDNYedMKDfyCSV5lpc1bWblpHByULQbefLEhyP1zILVEb7j9y0TYWqc91lE0pM20yVsiDy4FoNYhTjia~e~YRqwxlU8I1-io-HSqHk3kudPGjPDd3YKNoyVWZqLGXJMMnCjR6Yy-18-kBEkhR115nbntlFtb5WGOZ3N~Eqs74E4KIdLWjukzPym5ag0xTFjROled0WOO6CL5zSc7Et3x~kfLbX4RNL-iN7Xs6PZ5w__')">
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
