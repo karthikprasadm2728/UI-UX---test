@@ -145,7 +145,7 @@
                         displayUploadedMedia(files);
                         preview.innerHTML = `<p>Upload complete!</p>`;
                     } else {
-                        preview.innerHTML = `<p class="error-message">Upload failed: ${xhr.responseText}</p>`;
+                        preview.innerHTML = `<p class="error-message">Upload failed :( ${xhr.responseText}</p>`;
                     }
                     progressBar.style.width = "0";
                 };
